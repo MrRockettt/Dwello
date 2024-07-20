@@ -475,29 +475,51 @@
     // Footer Menu Starts Here ....
 
     document.addEventListener("DOMContentLoaded", function () {
-      const toggleButtons = document.querySelectorAll(".toggle-button");
+  const toggleButtons = document.querySelectorAll(".toggle-button");
 
-      const toggleFooterSection = function () {
-        const footerSection = this.closest(".footer-section");
-        footerSection.classList.toggle("expanded");
-        const footerContent = footerSection.querySelector(".footer-content");
-        if (footerSection.classList.contains("expanded")) {
-          footerContent.style.display = "block";
-          this.textContent = "-";
-        } else {
-          footerContent.style.display = "none";
-          this.textContent = "+";
-        }
-      };
+  const toggleFooterSection = function () {
+    const footerSection = this.closest(".footer-section");
+    footerSection.classList.toggle("expanded");
+    const footerContent = footerSection.querySelector(".footer-content");
+    if (footerSection.classList.contains("expanded")) {
+      footerContent.style.display = "block";
+      this.textContent = "-";
+    } else {
+      footerContent.style.display = "none";
+      this.textContent = "+";
+    }
+  };
 
-      toggleButtons.forEach((button) => {
-        button.onclick = toggleFooterSection;
-      });
-
+  const applyInitialStyles = function () {
+    if (window.matchMedia("(max-width: 600px)").matches) {
       const footerContents = document.querySelectorAll(".footer-content");
       footerContents.forEach((content) => {
         content.style.display = "none";
       });
-    });
+    } else {
+      // Remove inline styles when above 880px
+      const footerContents = document.querySelectorAll(".footer-content");
+      footerContents.forEach((content) => {
+        content.style.display = "";
+      });
+      toggleButtons.forEach((button) => {
+        button.textContent = "+";
+        const footerSection = button.closest(".footer-section");
+        footerSection.classList.remove("expanded");
+      });
+    }
+  };
+
+  toggleButtons.forEach((button) => {
+    button.onclick = toggleFooterSection;
+  });
+
+  // Apply initial styles based on screen size
+  applyInitialStyles();
+
+  // Re-apply styles on window resize
+  window.addEventListener("resize", applyInitialStyles);
+});
+
   </script>
 </html>
