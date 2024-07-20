@@ -497,7 +497,6 @@
         content.style.display = "none";
       });
     } else {
-      // Remove inline styles when above 880px
       const footerContents = document.querySelectorAll(".footer-content");
       footerContents.forEach((content) => {
         content.style.display = "";
@@ -514,10 +513,9 @@
     button.onclick = toggleFooterSection;
   });
 
-  // Apply initial styles based on screen size
   applyInitialStyles();
 
-  // Re-apply styles on window resize
+
   window.addEventListener("resize", applyInitialStyles);
 });
 
