@@ -1,0 +1,1850 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  font-family: "Poppins";
+}
+
+.page-1 {
+  background-color: #fef7f2;
+  width: 100%;
+  height:auto;
+  padding: 20px;
+  position: relative;
+}
+
+nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  align-items: center;
+  background-color: #fef7f2;
+  display: flex;
+  flex-direction: row;
+  /* padding: 15px; */
+  justify-content: space-around;
+  z-index: 1000;
+}
+
+nav ul{
+  float: right;
+  margin-right: 10px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 60px;
+  margin: 0 6px;
+}
+nav ul li a{
+  color: black;
+  border-radius: 3px;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 6px 13px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover{
+  transition: .5s;
+  text-decoration: underline;
+  border-radius: 5px;
+}
+
+nav #icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.checkbtn{
+  font-size: 30px;
+  color: black;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+
+.btn {
+  width: 100px;
+  background-color: black;
+  border-radius: 6px;
+  height: 40px;
+  text-align: center;
+  align-content: center;
+}
+
+.signup {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  padding: 10px; 
+}
+
+.page-1 .middle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+
+}
+
+.page-1 .spotlight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.middle #left {
+  padding: 50px;
+  width: 500px;
+
+}
+
+.middle #left h1 {
+  font-size: 60px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.middle #left p {
+  font-size: 20px;
+  font-weight: 500;
+  padding-bottom: 50px;
+}
+
+.middle #right #back-img{
+  width: 900px;
+
+}
+
+.page-1 .bottom {
+  background-color: #DDC7BB;
+  text-align: center;
+  height: 160px;
+  align-content: center;
+  width: 1070px;
+  border-radius: 18px;
+  position: absolute;
+  justify-content: center;
+  bottom: 5%;
+
+}
+
+.bottom label {
+  position: relative;
+  padding: 25px;
+}
+
+.bottom label .input-img{
+  position: absolute;
+  z-index: 1;
+  right: 45px;
+  bottom: 24px;
+
+}
+
+.bottom input{
+  border: none;
+  padding: 20px;
+  width: auto;
+  outline: none;
+  border-radius: 7px;
+
+}
+
+.bottom input::placeholder {
+
+  padding: 10px;
+  color: rgba(105, 83, 70, 1);
+  font-weight: bold;
+  font-size: large;
+
+}
+
+
+.page-2 {
+  display: flex;
+  padding: 80px;
+
+}
+
+
+.page-2 .right {
+
+  padding-left: 80px;
+  width: 840px;
+}
+
+.page-2 .cont {
+  padding: 50px;
+}
+
+.page-2 h1{
+  font-size: 50px;
+  margin: 0px;
+}
+
+.page-2 p {
+  font-size: 17px;
+  font-weight: 500;
+  color: rgba(79, 53, 39, 1);
+}
+
+.page-2 .para {
+  font-size: 20px;
+  font-weight: 500;
+  color:black;
+}
+
+.page-2 span {
+
+  font-size: 45px;
+  font-weight: 600;
+  color: rgba(79, 53, 39, 1);
+
+}
+
+.page-2 .span-txt {
+  display: flex;
+}
+
+.page-3 .top {
+
+  text-align: center;
+
+}
+
+.page-3 .top h1{
+  font-size: 40px;
+  font-weight: 700;
+
+}
+
+.page-3 .top p{
+
+  font-size: 18px;
+  font-weight: 500;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.page-3 .bottom {
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+
+.page-3 .container {
+  width: 270px;
+  height: 275px;
+  background-color: rgba(221, 199, 187, 1);
+  border-radius: 20px;
+}
+
+.page-3 .container #pg3-img{
+
+  background-color: white;
+  padding: 10px;
+  margin-top: 12px;
+  margin-left: 12px;
+  border-radius: 9px;
+
+}
+
+.page-3 .container h4, .page-3 .container p {
+  text-align: start;
+  padding: 20px;
+  margin: 0px;
+}
+
+.page-4 h1 {
+  text-align: center;
+  padding: 40px;
+  font-size: 40px;
+  color: #2B1B12;
+}
+
+.page-4 .grids {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 60px;
+  gap: 20px;
+
+}
+
+.page-4 .container {
+  width: 382px;
+  height: 534px;
+  background-color: rgba(221, 199, 187, 1);
+  border-radius: 15px;
+  margin-bottom: 60px;
+}
+
+.page-4 .container .location{
+  gap: 10px;
+  display: flex;
+  padding: 20px 20px 20px 30px;
+}
+
+.page-4 .container .location .location-img {
+  width: 24;
+  height: 24px;
+  color: black;
+}
+
+.page-4 .container .residence-img{
+
+  border-radius: 15px 15px 0px 0px;
+}
+
+.page-4 .container .location h3{
+
+  margin: 0px;
+}
+
+.page-4 .container .room {
+  display: flex;
+  gap: 10px;
+  padding: 0px 40px 20px 30px;
+  justify-content: space-between;
+}
+
+.page-4 .container .room #first {
+  display: flex;
+}
+
+.page-4 .container .room #second {
+  display: flex;
+}
+
+.page-4 .container .room #hotel-img, .page-4 .container .room #sqft-img {
+  width: 24px;
+  height: 24px;
+  background-color: white;
+
+}
+
+.page-4 .container .room p{
+  margin: 0px;
+  color: rgba(79, 53, 39, 1);
+  font-weight: 600;
+  font-size: 16px;
+  padding-left: 10px;
+  
+}
+
+.page-4 .container .price {
+  display: flex;
+  padding: 0px 25px 0px 25px;
+  justify-content: space-between;
+}
+
+.page-4 .container .price h3{
+  margin: 0px;
+  text-align: center;
+  padding: 0px 20px 0px 20px;
+  color: rgba(79, 53, 39, 1);
+
+}
+
+.page-5 {
+  background-color: #FEF7F2;
+}
+
+.page-5 .heading {
+
+  padding: 50px;
+}
+.page-5 h1{
+
+  color: #2B1B12;
+  font-size: 40px;
+  text-align: center;
+  margin: 0px;
+
+}
+
+.page-5 .carousel {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.page-5 .container {
+  width: 382px;
+  height: 430px;
+  border-radius: 18px;
+  background-color: #DDC7BB;
+  margin-bottom: 60px;
+}
+
+.page-5 .container #review-img {
+  border-radius: 18px 18px 0px 0px;
+
+}
+
+.page-5 .container .middle {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
+}
+
+.page-5 .container .middle #profile {
+  width: 58px;
+  height: 58px;
+}
+
+.page-5 .container .midd h3{
+
+  margin: 0px;
+  color: #2B1B12;
+}
+
+.page-5 .container .midd p{
+
+  margin: 0px;
+  color: #2B1B12;
+  font-weight: 500;
+}
+
+.page-5 .container .star-box {
+  display: flex;
+  background-color: white;
+  height: 25px;
+  width: 60px;
+  justify-content: center;
+  gap: 5px;
+}
+
+.page-5 .container .star-box #star{
+
+  width: 20px;
+  height: 20px;
+}
+
+.page-5 .container .star-box p{
+  margin: 0px;
+  color: #2B1B12;
+  font-weight: 500;
+}
+
+.page-5 .container #para{
+  margin: 0px;
+  text-align: start;
+  padding: 20px;
+  color: #4F3527;
+  font-weight: 500;
+
+}
+
+.page-5 .carousel {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 40px;
+}
+
+.page-5 .chevron {
+
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.page-5 .chevron svg {
+  background-color: #2B1B12;
+  color: white;
+  width: 30px;
+  height: 30px;
+  padding: 13px;
+  border-radius: 30px;
+}
+
+
+.page-6 .heading {
+
+  padding: 60px;
+}
+.page-6 h1{
+
+  color: #2B1B12;
+  font-size: 40px;
+  text-align: center;
+  margin: 0px;
+
+}
+
+.page-6 .support {
+
+  display: flex;
+  padding: 20px;
+}
+
+.page-6 .support p{
+
+  margin: 0px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #543E32;
+  width: 100%;
+  padding-left: 10px;
+}
+
+.page-6 .faq {
+
+  display: flex;
+  padding: 20px;
+
+}
+
+.page-6 .faq p{
+  margin: 0px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #543E32;
+  width: 100%;
+  padding-left: 10px;
+
+}
+
+.page-6 .combine {
+
+  display: flex;
+  justify-content: center;
+}
+
+
+.page-6 .btn {
+  width: 156px;
+  background-color: #2B1B12;
+  border-radius: 6px;
+  height: 60px;
+  text-align: center;
+  align-content: center;
+}
+
+.page-6 .input-section .btn .submit {
+
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+
+}
+
+
+.page-6 .input-section {
+
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  gap: 1.5rem;
+  position: relative;
+  padding-bottom: 70px;
+  
+}
+
+
+.page-6 input{
+  background-color: #DDC7BB;
+  width: 510px;
+  height: 60px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  text-align: center;
+  color: #543E32;
+
+}
+
+.page-6 input::placeholder {
+
+  color: #543E32; 
+  font-weight: bold;
+  font-size: large;
+  text-align: center;
+
+}
+
+.page-6 .input-section label #email {
+
+  position: absolute;
+  padding: 25px;
+
+}
+
+.page-7 {
+  background-color: #DDC7BB;
+  display: flex;
+  padding: 20px;
+  justify-content: space-around;
+}
+
+.page-7 .left {
+  padding: 20px 0px 0px 10px;
+  width: 50%;
+}
+
+.page-7 .left p {
+  font-weight: 500;
+  font-size: 18px;
+  color:#4F3527;
+}
+
+.page-7 .right {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.page-7 .right .footer-section{
+  /* padding: 40px; */
+  justify-content: space-evenly;
+}
+
+
+.page-7 h4{
+  font-size: 25px;
+  color: #2B1B12;
+  margin: 0px;
+}
+
+.page-7 ul {
+  padding: 0px;
+}
+
+
+.page-7  ul li {
+  list-style: none;
+  margin-bottom: 30px;
+
+}
+
+.page-7 ul li a {
+  text-decoration: none;
+  color:#4F3527;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.page-7 .socials h4{
+  font-size: 25px;
+  color: #2B1B12;
+  margin: 0px;
+}
+
+.page-7 .socials ul {
+  padding: 0px;
+}
+
+
+.page-7  .socials ul li {
+  list-style: none;
+  margin-bottom: 30px;
+
+}
+
+.page-7 .socials ul li a {
+  text-decoration: none;
+  color:#4F3527;
+  font-weight: 500;
+  font-size: 18px;
+  margin: 0px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+} 
+
+.page-7 .socials ul li a p{
+  margin: 0px;
+}
+
+/* Media Query Starts Here !!! */
+
+@media only screen and (min-width: 1280px) and (max-width: 1440px){
+
+  .page-1 .middle #left {
+    padding: 40px;
+  }
+
+  .page-1 .middle #left h1 {
+    font-size: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .page-2 .left #spotlight-img{
+    width: 550px;
+  }
+
+  .page-2 .right {
+    padding-left: 60px;
+    width: 820px;
+  }
+  
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1279px){
+
+  .page-1 .middle #left {
+    padding: 40px;
+  }
+
+  .page-1 .middle #left h1 {
+    font-size: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .page-1 .middle #right #back-img {
+    width: 700px;
+  }
+
+  .page-1 .bottom {
+    height: 100px;
+    width: 900px;
+    
+  }
+  
+  .bottom label {
+    padding: 20px;
+  }
+  
+  .bottom label .input-img{
+    right: 45px;
+    bottom: 24px;
+  
+  }
+  
+  .bottom input{
+    padding: 15px;
+    border-radius: 7px;
+  
+  }
+  
+  .bottom input::placeholder {
+    padding: 10px;
+    font-size: large;
+  }
+
+  .page-2 {
+    padding: 25px;
+  }
+
+  .page-2 .left #spotlight-img {
+    width: 400px;
+  }
+
+  .page-2 .right {
+    padding-left: 30px;
+  }
+
+  .page-2 .right h1{
+    font-size: 35px;
+  }
+
+  .page-2 .right .para {
+    margin: 0px;
+    font-size: 18px;
+  }
+
+  .page-2 .right .cont {
+    padding: 20px;
+  }
+  
+}
+
+@media screen and (max-width: 1023px){
+
+  .checkbtn {
+    display: block;
+  }
+
+  nav ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #fef7f2;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  } 
+
+  nav ul li a {
+    font-size: 20px;
+  }
+
+  a:hover {
+    background: none;
+    color: gray;
+  }
+
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+
+@media only screen and (min-width: 880px) and (max-width: 1023px){
+
+  .page-1 .checkbtn{
+    font-size: 25px;
+  }
+
+  .page-1 .middle #left {
+    width: 450px;
+    padding: 20px;
+  }
+
+  .page-1 .middle #left h1 {
+    font-size: 35px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .page-1 .middle #left p{
+
+    padding: 0px;
+  }
+
+  .page-1 .middle #right #back-img {
+    width: 600px;
+  }
+
+  .page-1 .bottom {
+    height: 90px;
+    width: 750px;
+    
+  }
+  
+  .bottom label {
+    padding: 5px;
+  }
+
+  
+  .bottom label .input-img{
+    right: 30px;
+    bottom: 8px;
+  
+  }
+  
+  .bottom input{
+    padding: 10px;
+    border-radius: 7px;
+  
+  }
+  
+  .bottom input::placeholder {
+    padding: 7px;
+    font-size: large;
+  }
+
+  .page-2 {
+    padding: 22px;
+  }
+
+  .page-2 .left #spotlight-img {
+    width: 350px;
+  }
+
+  .page-2 .right {
+    padding-left: 25px;
+  }
+
+  .page-2 .right h1{
+    font-size: 30px;
+  }
+
+  .page-2 .right .para {
+    margin: 0px;
+    font-size: 15px;
+  }
+
+  .page-2 .right .cont {
+    padding: 20px;
+  }
+
+  .page-2 .right .cont span {
+
+    font-size: 40px;
+  }
+
+  .page-3 .top h1{
+    font-size: 40px;
+  }
+
+  .page-3 .top p{
+    
+    padding: 18px;
+  }
+
+  .page-4 h1 {
+
+    font-size: 40px;
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .page-4 .grids {
+    padding: 40px;
+  }
+
+  .page-5 .heading {
+    padding: 30px;
+  }
+
+  .page-5 .heading h1 {
+
+    font-size: 40px;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 879px){
+
+
+  .page-1 .checkbtn{
+    font-size: 22px;
+  }
+
+  .page-1 .middle {
+
+  padding-bottom: 40px;
+
+  }
+  .page-1 .middle #left {
+    width: 240px;
+    padding: 0px;
+    padding-top: 60px;
+  }
+
+  .page-1 .middle #left h1 {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .page-1 .middle #left p{
+
+    font-size: 15px;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .page-1 .middle #right #back-img {
+    width: 420px;
+  }
+
+  .page-1 .bottom {
+    height: 50px;
+    width: 500px;
+    border-radius: 10px;
+    
+    
+  }
+
+  
+
+  .bottom input{
+    border: none;
+    padding: 10px;
+    width: 90px;
+    outline: none;
+    border-radius: 7px;
+  
+  }
+
+  .bottom label {
+    padding: 2px;
+  }
+
+  .bottom label .input-img {
+
+    width: 14px;
+    height: 15px;
+  }
+
+  .bottom label .input-img {
+    right: 13px;
+    bottom: 5px;
+  
+  }
+  
+  .bottom input{
+    padding: 10px;
+    border-radius: 5px;
+    height: 5px;
+  
+  }
+  
+  .bottom input::placeholder {
+    padding: 1px;
+    font-size: 12px;
+  }
+
+  .btn {
+    width: 100px;
+    border-radius: 6px;
+    height: 30px;
+  }
+  
+  .signup {
+    font-size: 12px;
+    padding: 5px; 
+  }
+
+  .page-2 {
+    padding: 15px;
+  }
+
+  .page-2 .left #spotlight-img {
+    width: 250px;
+  }
+
+  .page-2 .right {
+    padding-left: 25px;
+  }
+
+  .page-2 .right h1{
+    font-size: 22px;
+  }
+
+  .page-2 .right .para {
+    margin: 0px;
+    font-size: 12px;
+  }
+
+  .page-2 p {
+    margin: 0px;
+  }
+
+  .page-2 .right .cont {
+    padding: 10px;
+  }
+
+  .page-2 .right .cont span {
+
+    font-size: 30px;
+  }
+
+  .page-3 .top h1{
+    font-size: 30px;
+  }
+
+  .page-3 .top p{
+    
+    padding: 15px;
+  }
+
+  .page-4 h1 {
+
+    font-size: 30px;
+    padding: 15px;
+    margin: 15px;
+  }
+
+  .page-4 .grids {
+    padding: 30px;
+  }
+
+  .page-5 .heading {
+    padding: 30px;
+  }
+
+  .page-5 .heading h1 {
+
+    font-size: 30px;
+  }
+
+  .page-6 h1{
+    font-size: 30px;
+  }
+
+  .page-6 .heading {
+    padding: 40px;
+  }
+
+  .page-6 input {
+
+    width: 350px;
+    height: 50px;
+    border-radius: 8px;
+
+  }
+
+  .page-6 .btn {
+    width: 100px;
+    border-radius: 6px;
+    height: 50px;
+  }
+
+  .page-6 .input-section {
+    padding-bottom: 30px;
+    position: relative;
+  }
+
+  .page-6 .input-section label #email {
+
+    position: absolute;
+    bottom: 20px;
+  
+  }
+
+  .page-6 .support p, .page-6 .faq p{
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 600px) {
+
+  .page-7 .footer-section button {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 880px){
+
+  .page-7 {
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .page-7 .right {
+
+    width: 100%;
+    display: flex;
+  }
+
+  .page-7 .left {
+    text-align: center;
+    width: 100%;
+  }
+
+  .page-7 .plus {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+  .footer-section {
+    padding: 10px 0;
+  }
+
+  .footer-section h4 {
+    display: inline;
+    margin-right: 10px;
+  }
+
+  .footer-section.expanded .footer-content {
+    display: block;
+  }
+
+}
+
+
+@media (max-width: 599px) {
+
+  .footer-section.expanded .footer-content {
+    display: block;
+  }
+
+  .page-7 {
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .page-7 .right {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .page-7 .left {
+    text-align: center;
+    width: 100%;
+  }
+
+  .page-7 .footer-section .plus{
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .toggle-button {
+    display: inline-block;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  .footer-section {
+    /* border-top: 1px solid #ccc; */
+    padding: 10px 0;
+    /* text-align: center; */
+  }
+
+  .footer-section h4 {
+    display: inline;
+    margin-right: 10px;
+  }
+
+  .page-7 .plus {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+}
+
+
+@media only screen and (min-width: 450px) and (max-width: 599px){
+
+    .page-1 {
+        padding: 10px;
+    }
+
+    .page-1 .checkbtn{
+        font-size: 20px;
+      }
+
+    
+    .page-1 nav ul li {
+        margin: 30px 0;
+        line-height: 30px;
+    } 
+    
+    .page-1 nav ul li a {
+        font-size: 17px;
+    }
+
+    .page-1 .middle {
+
+        padding-bottom: 20px;
+    }
+    .page-1 .middle #left {
+        width: 160px;
+        padding :0px;
+        padding-top: 60px;
+      }
+    
+      .page-1 .middle #left h1 {
+        font-size: 22px;
+        padding-top: 20px;
+        margin: 0px;
+      }
+    
+      .page-1 .middle #left p{
+    
+        font-size: 13px;
+        padding: 0px;
+        margin: 0px;
+        padding-bottom: 10px;
+      }
+    
+      .page-1 .middle #right #back-img {
+        width: 290px;
+        padding-top: 60px;
+      }
+    
+      .page-1 .bottom {
+        height: 40px;
+        width: 365px;
+        border-radius: 7px;
+    }
+      
+    
+      .bottom input{
+        border: none;
+        padding: 2px;
+        width: 70px;
+        outline: none;
+        border-radius: 5px;
+      
+      }
+    
+      .bottom label {
+        padding: 2px;
+      }
+    
+      .bottom label .input-img {
+    
+        width: 10px;
+        height: 12px;
+      }
+    
+      .bottom label .input-img {
+        right: 13px;
+        bottom: 6px;
+      
+      }
+      
+      .bottom input{
+        padding: 9px;
+        border-radius: 5px;
+        height: 4px;
+      
+      }
+      
+      .bottom input::placeholder {
+        padding: 1px;
+        font-size: 9px;
+      }
+    
+      .page-1 .bottom .btn {
+        width: 90px;
+        border-radius: 6px;
+        height: 27px;
+      }
+      
+      .page-1 .bottom .signup {
+        font-size: 10px;
+        padding: 5px; 
+      }
+
+      .page-1 .btn {
+        width: 85px;
+        border-radius: 6px;
+        height: 28px;
+      }
+      
+      .page-1 .signup {
+        font-size: 13px;
+        font-weight: 500;
+        padding: 5px; 
+      }
+    
+      .page-2 {
+        padding: 13px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .page-2 .left #spotlight-img {
+        width: 400px;
+        height: fit-content;
+        justify-content: center;
+        padding-bottom: 40px;
+
+      }
+
+    
+      .page-2 .right {
+        width: 400px;
+        padding: 0px;
+        
+      }
+    
+      .page-2 .right h1{
+        font-size: 22px;
+        padding-bottom: 20px;
+        text-align: center;
+      }
+    
+      .page-2 .right .para {
+        margin: 0px;
+        font-size: 15px;
+      }
+    
+      
+      .page-2 p {
+        margin: 0px;
+        font-size: 15px;
+      }
+    
+      .page-2 .cont {
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      }
+    
+      .page-2 .cont span {
+    
+        font-size: 40px;
+      }
+
+      .page-2 .cont p{
+        font-size: 12px;
+      }
+    
+      .page-3 .top h1{
+        font-size: 30px;
+      }
+    
+      .page-3 .top p{
+        
+        padding: 15px;
+      }
+    
+      .page-4 h1 {
+    
+        font-size: 30px;
+        padding: 15px;
+        margin: 15px;
+      }
+    
+      .page-4 .grids {
+        padding: 30px;
+      }
+    
+      .page-5 .heading {
+        padding: 30px;
+      }
+    
+      .page-5 .heading h1 {
+    
+        font-size: 30px;
+      }
+
+      .page-5 .chevron svg {
+        width: 20px;
+        height: 20px;
+        padding: 13px;
+        border-radius: 30px;
+      }
+    
+      .page-6 h1{
+        font-size: 30px;
+      }
+    
+      .page-6 .heading {
+        padding: 40px;
+      }
+    
+      .page-6 input {
+    
+        width: 270px;
+        height: 40px;
+        border-radius: 8px;
+    
+      }
+    
+      .page-6 .btn {
+        width: 80px;
+        border-radius: 6px;
+        height: 40px;
+      }
+    
+      .page-6 .input-section {
+        padding-bottom: 30px;
+        position: relative;
+      }
+    
+      .page-6 input::placeholder {
+
+        font-weight: bold;
+        font-size: 15px;
+      
+      }
+      
+      .page-6 .input-section label #email {
+      
+        position: absolute;
+        padding: 10px;
+      }
+
+      .page-6 .combine .verify-img {
+
+        width: 18px;
+      }
+    
+      .page-6 .support p, .page-6 .faq p{
+        font-size: 12px;
+      }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 449px){
+
+  .page-1 {
+      padding: 10px;
+  }
+
+  .page-1 .checkbtn{
+      font-size: 13px;
+    }
+
+  
+  .page-1 nav ul li {
+      margin: 30px 0;
+      line-height: 20px;
+  } 
+  
+  .page-1 nav ul li a {
+      font-size: 17px;
+  }
+
+  nav ul {
+    top: 60px;
+    left: -100%;
+  }
+
+  .page-1 .middle {
+
+      padding-bottom: 50px;
+  }
+  .page-1 .middle #left {
+      width: 170px;
+      padding :0px;
+      padding-top: 50px;
+    }
+  
+    .page-1 .middle #left h1 {
+      font-size: 20px;
+      padding-top: 20px;
+      margin: 0px;
+    }
+  
+    .page-1 .middle #left p{
+  
+      font-size: 12px;
+      padding: 0px;
+      margin: 0px;
+      padding-bottom: 10px;
+    }
+  
+    .page-1 .middle #right {
+
+      align-items: center;
+    }
+    .page-1 .middle #right #back-img {
+      width: 222px;
+      padding-top: 50px;
+      text-align: center;
+    }
+  
+    .page-1 .bottom {
+      height: 30px;
+      width: 300px;
+      border-radius: 6px;
+  }
+    
+  
+    .bottom input{
+      padding: 2px;
+      width: 50px;
+      border-radius: 5px;
+    
+    }
+  
+    .bottom label {
+      padding: 2px;
+    }
+  
+    .bottom label .input-img {
+  
+      width: 8px;
+      height: 10px;
+    }
+  
+    .bottom label .input-img {
+      right: 10px;
+      bottom: 8px;
+    
+    }
+    
+    .bottom input{
+      padding: 7px 10px 7px 10px;
+      border-radius: 5px;
+      height: 4px;
+    
+    }
+    
+    .bottom input::placeholder {
+      padding: 1px;
+      font-size: 8px;
+    }
+  
+    .page-1 .bottom .btn {
+      width: 70px;
+      border-radius: 6px;
+      height: 15px;
+    }
+    
+    .page-1 .bottom .btn {
+      font-size: 9px;
+      padding: 4px; 
+    }
+
+    .page-1 .btn {
+      width: 70px;
+      border-radius: 6px;
+      height: 25px;
+    }
+    
+    .page-1 .signup {
+      font-size: 11px;
+      font-weight: 500;
+      padding: 5px; 
+    }
+  
+    .page-2 {
+      padding: 13px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .page-2 .left #spotlight-img {
+      width: 310px;
+      height: fit-content;
+      justify-content: center;
+      padding-bottom: 40px;
+
+    }
+
+  
+    .page-2 .right {
+      width: 310px;
+      padding: 0px;
+      
+    }
+  
+    .page-2 .right h1{
+      font-size: 20px;
+      padding-bottom: 18px;
+      text-align: center;
+    }
+  
+    .page-2 .right .para {
+      margin: 0px;
+      font-size: 13px;
+      
+    }
+  
+    
+    .page-2 p {
+      margin: 0px;
+      font-size: 15px;
+    }
+  
+    .page-2 .cont {
+      padding: 13px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .page-2 .cont span {
+  
+      font-size: 35px;
+    }
+
+    .page-2 .cont p{
+      font-size: 14px;
+    }
+  
+    .page-3 .top h1{
+      font-size: 28px;
+    }
+  
+    .page-3 .top p{
+      
+      padding: 10px;
+    }
+  
+    .page-4 h1 {
+  
+      font-size: 28px;
+      padding: 15px;
+      margin: 15px;
+    }
+  
+    .page-4 .grids {
+      padding: 10px;
+    }
+
+    .page-4 .container {
+      width: 320px;
+      height: 450px;
+      border-radius: 13px;
+      margin-bottom: 60px;
+    }
+
+    .page-4 .container .location h3 {
+      margin: 0px;
+      font-size: 16px;
+    }
+
+    .page-4 .container .room p {
+      margin: 0px;
+      font-weight: 600;
+      font-size: 14px;
+      padding-left: 10px;
+    }
+
+    .page-4 .btn {
+      width: 90px;
+      border-radius: 6px;
+      height: 30px;
+    }
+    
+    .page-4 .signup {
+      font-size: 13px;
+      font-weight: 500;
+      padding: 5px; 
+    }
+    .page-4 .container .price h3 {
+      margin: 0px;
+      padding: 0px 20px 0px 20px;
+      font-size: 19px;
+    }
+
+    .page-4 .container .residence-img {
+      border-radius: 13px 13px 0px 0px;
+      width: 320px;
+    }
+  
+    .page-5 .heading {
+      padding: 15px;
+    }
+  
+    .page-5 .heading h1 {
+  
+      font-size: 25px;
+    }
+
+    .page-5 .container {
+      width: 320px;
+      height: 430px;
+      border-radius: 15px;
+      margin-bottom: 60px;
+    }
+
+    .page-5 .container #review-img {
+      border-radius: 15px 15px 0px 0px;
+      width: 320px;
+    }
+
+    .page-5 .container .middle {
+      padding: 12px;
+    }
+
+    .page-5 .container .midd h3 {
+      margin: 0px;
+      font-size: 18px;
+    }
+
+    .page-5 .container .star-box {
+      height: 22px;
+      width: 50px;
+      gap: 5px;
+    }
+
+    .page-5 .container .star-box #star {
+      width: 15px;
+      height: 15px;
+      justify-content: center;
+    }
+
+    .page-5 .container .star-box p {
+
+      font-size: 13px;
+    }
+
+    .page-5 .chevron svg {
+      width: 20px;
+      height: 20px;
+      padding: 13px;
+      border-radius: 30px;
+    }
+  
+    .page-6 h1{
+      font-size: 25px;
+    }
+  
+    .page-6 .heading {
+      padding: 30px;
+    }
+  
+    .page-6 input {
+  
+      width: 220px;
+      height: 33px;
+      border-radius: 8px;
+  
+    }
+
+    .page-6 .btn {
+      width: 75px;
+      border-radius: 6px;
+      height: 33px;
+    }
+    
+    .page-6 .signup {
+      font-size: 9px;
+      font-weight: 500;
+      padding: 5px; 
+    }
+  
+    .page-6 .input-section {
+      padding-bottom: 30px;
+      position: relative;
+    }
+  
+    .page-6 input::placeholder {
+
+      font-weight: bold;
+      font-size: 12px;
+    
+    }
+    
+    .page-6 .input-section label #email {
+    
+      position: absolute;
+      padding: 10px;
+      top: -4px;
+    }
+
+    .page-6 .combine .verify-img {
+
+      width: 20px;
+      height: 20px;
+      padding: 5px;
+    }
+  
+    .page-6 .support p, .page-6 .faq p{
+      font-size: 12px;
+      margin: 0px;
+      font-size: 10px;
+      font-weight: 500;
+      padding-left: 0px;
+    }
+}
+
+
+
