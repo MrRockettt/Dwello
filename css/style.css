@@ -397,7 +397,7 @@ nav #icons {
   height: 430px;
   border-radius: 18px;
   background-color: #DDC7BB;
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
 }
 
 .page-5 .container #review-img {
@@ -471,6 +471,7 @@ nav #icons {
   display: flex;
   justify-content: center;
   gap: 30px;
+  padding-bottom: 30px;
 }
 
 .page-5 .chevron svg {
@@ -592,8 +593,14 @@ nav #icons {
 .page-6 .input-section label #email {
 
   position: absolute;
-  padding: 25px;
+  padding-left: 90px;
 
+}
+
+.page-6 .input-section label {
+
+  display: flex;
+  align-items: center;
 }
 
 .page-7 {
@@ -926,9 +933,15 @@ nav #icons {
 
     font-size: 40px;
   }
+
+  .page-6 .input-section label #email {
+
+    padding-left: 100px;
+  
+  }
 }
 
-@media only screen and (min-width: 600px) and (max-width: 879px){
+@media only screen and (min-width: 600px) and (max-width: 880px){
 
 
   .page-1 .checkbtn{
@@ -970,8 +983,6 @@ nav #icons {
     
     
   }
-
-  
 
   .bottom input{
     border: none;
@@ -1110,11 +1121,17 @@ nav #icons {
     padding-bottom: 30px;
     position: relative;
   }
+  
+  .page-6 .input-section label{
+    display: flex;
+    align-items: center;
+  }
+
 
   .page-6 .input-section label #email {
 
     position: absolute;
-    bottom: 20px;
+    padding-left: 30px;
   
   }
 
@@ -1475,7 +1492,7 @@ nav #icons {
       .page-6 .input-section label #email {
       
         position: absolute;
-        padding: 10px;
+        padding-left: 18px;
       }
 
       .page-6 .combine .verify-img {
