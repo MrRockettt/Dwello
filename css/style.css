@@ -1836,6 +1836,14 @@ nav #icons {
       height: 20px;
       padding: 5px;
     }
+
+    .page-6 .support, .page-6 .faq{
+
+      align-items: center;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+
   
     .page-6 .support p, .page-6 .faq p{
       font-size: 12px;
